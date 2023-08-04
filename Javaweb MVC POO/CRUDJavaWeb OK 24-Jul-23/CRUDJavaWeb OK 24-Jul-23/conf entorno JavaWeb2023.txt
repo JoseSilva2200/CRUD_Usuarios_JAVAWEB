@@ -1,0 +1,22 @@
+Netbeans 12
+JDK 1.8 : jdk1.8.0_121
+MySQL_JDBC_Driver: mysql-connector-java-5.1.15-bin.jar -> clave Mysql admin123 -> usuario: root
+Librerías: 
+JSTL 1.2.1 - jstl-impl.jar
+JSTL 1.2.1 - jstl-api.jar
+Apache Tomcat or TomEE 9.0.41 -> puerto 8089 -> usuario: admin -> clave: admin
+
+https://www.youtube.com/watch?v=ZYmNQnbpD28&list=PLkFVNN1rbJCc9spC-UG10i2Mg5ACPDbVY&index=1
+
+usuarios sistema
+Alexander -> admin
+Stephano -> ven234
+
+ojo:
+        MysqlConnectionPoolDataSource ds = new MysqlConnectionPoolDataSource();
+        ds.setServerName("localhost");
+        ds.setPort(3306);
+        ds.setDatabaseName("bdcrudusuarios?characterEncoding=UTF-8");
+        conexion = ds.getConnection("root", "admin123");
+
+para que conecte la bd se le debe pasar el pa´rametro de characteres
